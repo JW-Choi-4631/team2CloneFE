@@ -15,7 +15,7 @@ function Home() {
   return (
     <layout.FlexColumnCenter style={{ height: "100vh", backgroundColor: `${sVar.bgReplColor}` }}>
       <Logo style={{ margin: "10px" }} />
-      <p style={{ margin: "4px", fontSize: "15px" }}>Welcome to ChatGPT</p>
+      <p style={{ margin: "4px", fontSize: "15px" }}>Welcome to ChapGPT</p>
       <p style={{ margin: "16px", fontSize: "15px" }}>Log in with your OpenAI account to continue</p>
       <layout.FlexCenter>
         <GreenBtn>Log in</GreenBtn>

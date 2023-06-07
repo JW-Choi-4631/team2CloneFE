@@ -72,7 +72,7 @@ function MainTextInput({ isLoading, handleSubmit, focusedChat, credit }) {
       <style.CreditContainer style={{bottom: `${creditHeight}`}} credit={credit}>Remaining credits : {credit}</style.CreditContainer>
       <style.MainInputContainer>
         <style.MainInput height={inputHeight} ref={textAreaRef} onKeyDown={handleKeyDown} onChange={(event) => setInputValue(event.target.value)} value={inputValue} placeholder="Send a message..."></style.MainInput>
-        <Send isLoading={isLoading} iconColor={sessionStorage.getItem("userHex")} isContent={!!inputValue} handleSubmit={focusedChat === null ? () => handleSubmit(inputValue) : () => handleSubmit(inputValue, focusedChat)} />
+        <Send isLoading={isLoading} iconColor={sessionStorage.getItem("userHex")} isContent={!!inputValue} handleSubmit={focusedChat === null ? () => submitHandler(inputValue) : () => submitHandler(inputValue, focusedChat)} />
       </style.MainInputContainer>
     </>
   );
